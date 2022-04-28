@@ -13,30 +13,13 @@ Set-PSReadLineOption -Colors @{ String = "#ff79c6" }
 Set-PSReadLineOption -Colors @{ Type = "#ff79c6" }
 Set-PSReadLineOption -Colors @{ Variable = "#f1fa8c" }
 
-Write Bem-vindo
+Write-Output "Bem-vindo, Nicolas.
+
+Para alterar profile.ps1 use o comando !profile
+"
 
 function !dev {
-    cd $env:userprofile\Coding
-}
-
-function !seven {
-    cd $env:userprofile\Coding\7academy
-}
-
-function !proj {
-    cd $env:userprofile\Coding\Projetos
-}
-
-function !facul {
-    cd $env:userprofile\Coding\Faculdade
-}
-
-function !pet {
-    cd $env:userprofile\Coding\Projetos\petcare
-}
-
-function !perolas {
-    cd $env:userprofile\PerolasDa7
+    Set-Location C:\Coding
 }
 
 function !sln {
