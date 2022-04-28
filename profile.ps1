@@ -23,7 +23,7 @@ function !dev {
 }
 
 function !sln {
-    $VSPath = "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe"
+    $RiderPath = "C:\Program Files\JetBrains\JetBrains Rider 2022.1\bin\rider64.exe"
     $SolutionCount = (Get-ChildItem *.sln | Measure-Object).Count;
     $SolutionPath = Resolve-Path -Path *.sln -Relative
     if (1 -gt $SolutionCount) {
@@ -45,7 +45,7 @@ function !sln {
         }
     }
 
-    Start-Process $VSPath $SolutionPath
+    Start-Process $RiderPath $SolutionPath
 }
 
 function !profile {
