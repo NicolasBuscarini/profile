@@ -22,7 +22,7 @@ Set-Location C:\Coding
 
 # winget install JanDeDobbeleer.OhMyPosh -s winget
 # https://ohmyposh.dev/docs/installation/windows
-oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/di4am0nd.omp.json" | Invoke-Expression
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/amro.omp.json" | Invoke-Expression
 
 function !dev {
     Set-Location C:\Coding
