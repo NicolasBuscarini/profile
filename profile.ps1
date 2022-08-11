@@ -18,6 +18,10 @@ Write-Output "Bem-vindo, Nicolas.
 Para alterar profile.ps1 use o comando !profile
 "
 
+# winget install JanDeDobbeleer.OhMyPosh -s winget
+# https://ohmyposh.dev/docs/installation/windows
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/tokyo.omp.json" | Invoke-Expression
+
 function !dev {
     Set-Location C:\Coding
 }
